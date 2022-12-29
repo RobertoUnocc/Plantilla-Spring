@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>ISpring</title>
+</head>
+<body>
+	<h1>CARLOSS</h1>
+	<h3>PROBANDO PARAMS</h3>
+	<div th:text="${resultado}"></div>
+	
+	<ul>
+		<li><a th:href="@{/params/mix-params(saludo='HOLII',numero=10)}">/params/parametros?texto=Texto&numero=10</a>
+		<li><a th:href="@{/params/mix-params-servlet(saludo='HOLII',numero=10)}">/params/parametros/servlet?texto=Texto&numero=10</a>
+	</ul>
+</body>
+</html>
